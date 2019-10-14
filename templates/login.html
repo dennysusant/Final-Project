@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://images4.alphacoders.com/505/thumb-1920-50586.jpg");
+           }
+        </style>
+    <style>
+      body{background-color: #f1f1f1;}
+     .bslf{
+  	width: 350px;
+    margin: 120px auto;
+    padding: 25px 20px;
+    background: #3a1975;
+    box-shadow: 2px 2px 4px #ab8de0;
+    border-radius: 5px;
+    color: #fff;
+     }
+     .bslf h2{
+  	margin-top: 0px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid #25055f;
+     }
+     .bslf a{color: #783ce2;}
+     .bslf a:hover{
+  	text-decoration: none;
+    	color: #03A9F4;
+     }
+     .bslf .checkbox-inline{padding-top: 7px;}
+      
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      </style>
+</head>
+<body>
+              <div class="navbar">
+                <a href="/">Home</a>
+                <a href="/rekomen">Anime recommendations</a>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+                <a href="/logout">Log Out</a>
+              </div>
+             
+              <div class="bslf">
+                  <form action="/login" method="post">
+                    <h2 class="text-center">{{x}}</h2>       
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Email" name='email' required="required">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" placeholder="Password" name='password' required="required">
+                    </div>
+                    <div class="form-group clearfix">
+                      <button type="submit" class="btn btn-primary pull-right">Log in</button>      
+                  </form>
+                </div>            
+</body>
+</html>
